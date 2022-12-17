@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Three.js VS Babylon.js | WebGL</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Three.js VS Babylon.js | WebGL">
+    <meta name="author" content="Frederico Alves">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- 3D Canvas Comparison -->
+    <div class="container">
+
+        <!-- Three.js -->
+        <div class="threeJS">
+            <h2>Three.js</h2>
+            <!-- Three.js Canvas -->
+            <canvas id="three-js-scene"></canvas>
+            <!-- Three.js Imported Libraries -->
+            <script src="https://cdn.jsdelivr.net/npm/three@0.145.0/build/three.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/three@0.145.0/examples/js/controls/OrbitControls.js"></script>
+            <!-- Three.js App -->
+            <script src="app_three.js"></script>
+        </div>
+
+        <!-- Babylon.js -->
+        <div class="babylonJS">
+            <h2>Babylon.js</h2>
+            <!-- Babylon.js Canvas -->
+            <canvas id="babylon-js-scene"></canvas>
+            <!-- Babylon.js Imported Library -->
+            <script src="https://cdn.babylonjs.com/babylon.js"></script>
+            <!-- Babylon.js App -->
+            <script src="app_babylon.js"></script>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <p class="VS">VS</p>
+    <a href="https://alves.dk" target="_blank">
+        <p class="footer">
+            Frederico Alves | PBA Web Development | Synopsis<span class="footer_synopsis">: Incorporating 3D Objects on the Web</span>
+        </p>
+    </a>
+    
+</body>
+</html>

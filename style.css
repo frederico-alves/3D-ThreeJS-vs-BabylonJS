@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+html, body {
+    /* Prevents scroll */
+    overflow: hidden;
+    font-family: open-sans, sans-serif;
+}
+
+h2, .VS {
+    position: absolute;
+    top: 6rem;
+    font-size: 3rem;
+    font-weight: 600;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    background-color: #fff;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.VS {
+    font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.threeJS, .babylonJS {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+#three-js-scene, #babylon-js-scene {
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.269);
+    padding: 1rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer:hover {
+    background-color: rgba(255, 255, 255, 0.897);
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .footer_synopsis {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px), (max-height: 400px) {
+    .VS, h2 {
+        top: 15%;
+        font-size: 1rem;
+    }
+}
+
